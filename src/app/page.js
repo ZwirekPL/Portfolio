@@ -1,32 +1,56 @@
+"use client";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 import VideoHeader from "./video-header";
+import TimeLine from "./timeline";
+import Technology from "./technology";
+// import Contact from "./cotnact";
 
 export default function Home() {
+  const { scrollY } = useScroll();
+  const headerHeadingPosition = useTransform(scrollY, [0, 400], [0, -150]);
+  const headerHeadingBackground = useTransform(scrollY, [0, 400], [0, 1]);
+  const headerHeading = useTransform(scrollY, [0, 400], [0, 200]);
+  const headerHeadingScale = useTransform(scrollY, [0, 400], [1, 0.5]);
+  const contactButton = useTransform(scrollY, [0, 200], [0, -200]);
+
   return (
     <>
       <header className="flex flex-col justify-center items-center w-full h-[100vh] relative">
         <div className="flex flex-col justify-center items-center w-[940px] h-[100vh] relative">
           <div className="flex flex-col justify-center items-evenly w-full h-[100vh]">
             <div className="flex flex-col justify-center items-center w-full">
-              <h1 className=" p-2 font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-600">
+              <motion.h1
+                className=" p-2 font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-600 fixed top-[9rem] z-40"
+                style={{
+                  translateY: headerHeadingPosition,
+                  scale: headerHeadingScale,
+                }}
+              >
                 Wirgiliusz Ładziński
-              </h1>
-              <h2 className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-100">
+              </motion.h1>
+              <motion.h2
+                className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-100"
+                style={{ translateY: headerHeading }}
+              >
                 JavaScript Developer
-              </h2>
+              </motion.h2>
             </div>
-            <div className="w-[90%] flex flex-row justify-end">
+            <motion.div
+              className="w-[90%] flex flex-row justify-end"
+              style={{ translateY: contactButton }}
+            >
               <button className=" hover:first-letter:text-blue-600 hover:bg-black/70 bg-black/20 rounded-md shadow-blue-600 shadow-md h-20 w-40 text-3xl font-bold text-blue-200 ">
                 Contact
               </button>
-            </div>
+            </motion.div>
           </div>
           <VideoHeader />
-          <div className="bg-black/60 h-[100vh] w-full -z-10 absolute"></div>
+          <div className="bg-black/60 h-[100vh] w-[100vw] -z-10 absolute"></div>
         </div>
       </header>
-      <main className="flex flex-col justify-start items-center w-full h-[400vh] relative">
+      <main className="flex flex-col justify-start items-center w-full h-[400vh] relative overflow-hidden">
         <div className="flex flex-row justify-center items-start w-[940px] relative">
           <div className="flex flex-col justify-center items-center w-[50%] h-[100%]">
             <div className="flex flex-col h-[60%]">
@@ -91,7 +115,7 @@ export default function Home() {
             kliknieciu ){" "}
           </h1>
           <div className="flex flex-row justify-between items-start w-[940px]">
-            <div className="h-[450px] overflow-y-scroll hover:scale-150 hover:cursor-pointer ">
+            <div className="h-[450px] overflow-y-scroll hover:scale-150 hover:cursor-pointer hover:z-10 ">
               <Image
                 src="/Jakub.png"
                 width={270}
@@ -99,7 +123,7 @@ export default function Home() {
                 alt="Picture of the author"
               />
             </div>
-            <div className="h-[450px]  hover:scale-150 hover:cursor-pointer ">
+            <div className="h-[450px]  hover:scale-150 hover:cursor-pointer hover:z-10 ">
               <Image
                 src="/DROWENT.png"
                 width={270}
@@ -107,7 +131,7 @@ export default function Home() {
                 alt="Picture of the author"
               />
             </div>
-            <div className="h-[450px] overflow-y-scroll  hover:scale-150 hover:cursor-pointer ">
+            <div className="h-[450px] overflow-y-scroll  hover:scale-150 hover:cursor-pointer hover:z-10 ">
               <Image
                 src="/Catering-Manager-1.png"
                 width={270}
@@ -141,7 +165,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-start w-[940px] relative bg-gray-800 "></div>
+        <div className="flex flex-col justify-center items-start translate-x-40 relative overflow-x-hidden ">
+          <TimeLine />
+        </div>
+        <Technology />
+        {/* <Contact /> */}
       </main>
       <footer>
         framer motion kiedy przewijam przycisk kontakt i Wirgiliusz Ładziński ma

@@ -1,0 +1,193 @@
+@keyframes x0 {
+  0% {
+    z-index: 0;
+  }
+  25% {
+    transform: translateX(170px) scaleX(0.3) scale(80%);
+    z-index: 0;
+  }
+  35% {
+    z-index: -1;
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  75% {
+    transform: translateX(-190px) scaleX(0.3) scale(80%);
+    z-index: -1;
+  }
+  80% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 0;
+    transform: translateX(0px) scaleX(1);
+  }
+}
+@keyframes x45 {
+  0% {
+    z-index: 0;
+  }
+  25% {
+    transform: translate(150px, 180px) scaleX(0.3) scale(80%);
+    z-index: 0;
+  }
+  35% {
+    z-index: -1;
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  75% {
+    transform: translate(-150px, -180px) scaleX(0.3) scale(80%);
+    z-index: -1;
+  }
+  80% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 0;
+    transform: translateX(0px) scaleX(1);
+  }
+}
+@keyframes x135 {
+  0% {
+    z-index: 0;
+  }
+  25% {
+    transform: translate(150px, -180px) scaleX(0.3) scale(80%);
+    z-index: 0;
+  }
+  35% {
+    z-index: -1;
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  75% {
+    transform: translate(-150px, 180px) scaleX(0.3) scale(80%);
+    z-index: -1;
+  }
+  80% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 0;
+    transform: translateX(0px) scaleX(1);
+  }
+}
+
+.react {
+  position: absolute;
+  top: 50%;
+  animation-name: x0;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.reactr {
+  position: absolute;
+  top: 50%;
+  animation-name: x0;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+.html {
+  position: absolute;
+  top: 50%;
+  animation-name: x0;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+}
+.js {
+  position: absolute;
+  top: 50%;
+  animation-name: x0;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+}
+.bootstrap {
+  position: absolute;
+  top: 50%;
+  animation-name: x45;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.css {
+  position: absolute;
+  top: 50%;
+  animation-name: x45;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+.tailwind {
+  position: absolute;
+  top: 50%;
+  animation-name: x45;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+}
+.sass {
+  position: absolute;
+  top: 50%;
+  animation-name: x45;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+}
+.auth0 {
+  position: absolute;
+  top: 50%;
+  animation-name: x135;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.express {
+  position: absolute;
+  top: 50%;
+  animation-name: x135;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+.mongo {
+  position: absolute;
+  top: 50%;
+  animation-name: x135;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+.nextjs {
+  position: absolute;
+  top: 50%;
+  animation-name: x135;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+.node {
+  position: absolute;
+  top: 50%;
+  animation-name: x135;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+}
