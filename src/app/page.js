@@ -91,20 +91,20 @@ export default function Home() {
               <p className="p-2">
                 I am workhorse but lazy at the same time. It seems unlikely, but
                 it works wonders for me. I prefer to make things easier for
-                myself, not to do them in an ill-considered way. I don't know
-                the word impossible. Everything is possible but some things take
-                more time. I don't give up and I like challenges. If something
-                doesn't work out for me, it motivates me even more to develop. I
-                love learning new things and gaining new skills. And all only
-                because if we do not develop, from the perspective of the world,
-                we go backwards. I have a very open mind and can think outside
-                the box. I think analytically and like to break everything down
-                to the smallest atoms. Life's too short to be good. I always try
-                to be the best and conquer the next peaks. Being a
-                perfectionist, I believe that you can always improve something
-                and you can't do something 100% perfect, but you can always
-                strive for it. And it is this pursuit of perfection that makes
-                me an above average person.
+                myself, not to do them in an ill-considered way. I don&apos;t
+                know the word impossible. Everything is possible but some things
+                take more time. I don&apos;t give up and I like challenges. If
+                something doesn&apos;t work out for me, it motivates me even
+                more to develop. I love learning new things and gaining new
+                skills. And all only because if we do not develop, from the
+                perspective of the world, we go backwards. I have a very open
+                mind and can think outside the box. I think analytically and
+                like to break everything down to the smallest atoms. Life&apos;s
+                too short to be good. I always try to be the best and conquer
+                the next peaks. Being a perfectionist, I believe that you can
+                always improve something and you can&apos;t do something 100%
+                perfect, but you can always strive for it. And it is this
+                pursuit of perfection that makes me an above average person.
               </p>
             </div>
           </div>
