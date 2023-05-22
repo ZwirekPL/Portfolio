@@ -10,19 +10,19 @@ import Technology from "./technology";
 export default function Home() {
   const { scrollY } = useScroll();
   const headerHeadingPosition = useTransform(scrollY, [0, 400], [0, -150]);
-  const headerHeadingBackground = useTransform(scrollY, [0, 400], [0, 1]);
+  const navLeftSide = useTransform(scrollY, [0, 400], [250, 0]);
+  const navRightSide = useTransform(scrollY, [0, 400], [-250, 0]);
   const headerHeading = useTransform(scrollY, [0, 400], [0, 200]);
   const headerHeadingScale = useTransform(scrollY, [0, 400], [1, 0.5]);
   const contactButton = useTransform(scrollY, [0, 200], [0, -200]);
-
   return (
     <>
       <header className="flex flex-col justify-center items-center w-full h-[100vh] relative">
         <div className="flex flex-col justify-center items-center w-[940px] h-[100vh] relative">
           <div className="flex flex-col justify-center items-evenly w-full h-[100vh]">
-            <div className="flex flex-col justify-center items-center w-full">
+            <div className="flex flex-col justify-center items-center w-full h-40">
               <motion.h1
-                className=" p-2 font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-600 fixed top-[9rem] z-40"
+                className=" p-2 font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-600 fixed top-[9rem] z-50"
                 style={{
                   translateY: headerHeadingPosition,
                   scale: headerHeadingScale,
@@ -31,7 +31,7 @@ export default function Home() {
                 Wirgiliusz Ładziński
               </motion.h1>
               <motion.h2
-                className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-100"
+                className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-100 my-40"
                 style={{ translateY: headerHeading }}
               >
                 JavaScript Developer
@@ -47,9 +47,32 @@ export default function Home() {
             </motion.div>
           </div>
           <VideoHeader />
-          <div className="bg-black/60 h-[100vh] w-[100vw] -z-10 absolute"></div>
         </div>
       </header>
+      <nav className="bg-black/90 h-[74px] w-[100vw] flex flex-row justify-between items-center sticky top-0 z-40">
+        <motion.div
+          className="flex items-center justify-center mx-8"
+          style={{ translateX: navLeftSide }}
+        >
+          <button className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md">
+            About me
+          </button>
+          <button className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md">
+            Go to top
+          </button>
+        </motion.div>
+        <motion.div
+          className="flex items-center justify-center mx-8"
+          style={{ translateX: navRightSide }}
+        >
+          <button className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md">
+            Projects
+          </button>
+          <button className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md">
+            Contact
+          </button>
+        </motion.div>
+      </nav>
       <main className="flex flex-col justify-start items-center w-full h-[400vh] relative overflow-hidden">
         <div className="flex flex-row justify-center items-start w-[940px] relative">
           <div className="flex flex-col justify-center items-center w-[50%] h-[100%]">
