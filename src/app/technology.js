@@ -4,7 +4,7 @@ import styles from "./style/styles.module.css";
 const Technology = () => {
   return (
     <div>
-      <h1 className="text-4xl font-semibold">My Skills</h1>
+      <h1 className="text-4xl font-semibold text-center">My Skills</h1>
       <div className="w-full flex justify-center align-center relative">
         <Image src="/me.png" width={400} height={400} alt="" />
         <Image
