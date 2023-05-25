@@ -1,12 +1,27 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+// import styles from "./style/styles.module.css";
+// import { useEffect, useState } from "react";
 
 const TimeLine = () => {
   const { scrollY } = useScroll();
   const timeLineScrollingX = useTransform(scrollY, [2100, 2700], [300, -800]);
+  // const timeLineStopScrolling = useTransform(
+  //   scrollY,
+  //   [2100, 2700],
+  //   [300, -800]
+  // );
+  // useEffect(() => {
+  //   window.addEventListener("scroll", (event) => {
+  //     let scrollCurrently = this.scrollY;
+  //     if (scrollCurrently > 2100) {
+  //     }
+  //   });
+  // }, []);
+
   return (
     <motion.div
-      className="flex flex-col justify-center items-start translate-x-[300px] relative overflow-x-hidden mt-20"
+      className="flex flex-col justify-center items-start translate-x-[300px]  overflow-hidden mt-20  "
       style={{
         translateX: timeLineScrollingX,
       }}

@@ -23,6 +23,11 @@ const Header = () => {
   );
   const headerHeadingScaleMobile = useTransform(scrollY, [0, 350], [1, 0.55]);
   const headerHeadingMobile = useTransform(scrollY, [0, 350], [0, 250]);
+  const mobileNameBackgroundOpacity = useTransform(
+    scrollY,
+    [0, 349, 350],
+    [0, 0, 1]
+  );
   const contactButtonMobile = useTransform(scrollY, [0, 350], [0, -200]);
 
   if (isMobile) {
@@ -61,6 +66,10 @@ const Header = () => {
           <VideoHeader />
           <div className="absolute h-[100vh] w-[100vw] bg-black/40"></div>
         </div>
+        <motion.div
+          className="bg-black/90 w-full h-[120px] fixed top-0 z-40"
+          style={{ opacity: mobileNameBackgroundOpacity }}
+        ></motion.div>
       </header>
     );
   } else {
