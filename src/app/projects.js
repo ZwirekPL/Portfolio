@@ -20,17 +20,18 @@ const Projects = ({ projectsRef }) => {
     [1200, 1650],
     [600, 0]
   );
-
+  // dodać na klik powiększenie do poziomu całej strony z opisem i linkami
   return (
     <motion.div
       ref={projectsRef}
-      className="projects flex flex-col justify-center items-center w-[940px] relative pt-20 "
-      style={{}}
+      className="flex flex-col justify-center items-center w-[940px] relative pt-20  "
     >
-      <h1 className="text-4xl font-semibold text-center mb-8">Projects</h1>
+      <h1 className="text-4xl font-semibold text-center mb-8 bg-black/60">
+        Projects
+      </h1>
       <div className="flex flex-row justify-between items-start w-[940px]">
         <motion.div
-          className="h-[450px] overflow-y-scroll hover:scale-150 hover:cursor-pointer hover:z-10 "
+          className="h-[450px] overflow-y-scroll hover:cursor-pointer"
           style={{
             translateX: firstImageScrollTranslateX,
           }}
@@ -43,7 +44,7 @@ const Projects = ({ projectsRef }) => {
           />
         </motion.div>
         <motion.div
-          className="h-[450px]  hover:scale-150 hover:cursor-pointer hover:z-10 "
+          className="h-[450px] hover:cursor-pointer"
           style={{
             translateY: secondImageScrollTranslateY,
           }}
@@ -56,7 +57,7 @@ const Projects = ({ projectsRef }) => {
           />
         </motion.div>
         <motion.div
-          className="h-[450px] overflow-y-scroll  hover:scale-150 hover:cursor-pointer hover:z-10 "
+          className="h-[450px] overflow-y-scroll   hover:cursor-pointer "
           style={{
             translateX: thirdImageScrollTranslateX,
           }}

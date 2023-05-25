@@ -19,16 +19,16 @@ const Navigation = ({ aboutRef, projectsRef }) => {
         style={{ translateX: navLeftSide }}
       >
         <button
-          className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md"
+          className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
           onClick={() => executeScroll(aboutRef)}
         >
           About me
         </button>
         <button
-          className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md"
+          className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
           onClick={handleScrollToTop}
         >
-          Go to top
+          Home
         </button>
       </motion.div>
       <motion.div
@@ -36,12 +36,14 @@ const Navigation = ({ aboutRef, projectsRef }) => {
         style={{ translateX: navRightSide }}
       >
         <button
-          className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md"
+          className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
           onClick={() => executeScroll(projectsRef)}
         >
           Projects
         </button>
-        <button className="text-2xl font-semibold p-2 mx-3 rounded-md hover:first-letter:text-blue-600 hover:shadow-blue-600 shadow-md">
+        <button
+          className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
+        >
           Contact
         </button>
       </motion.div>
