@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "./style/styles.module.css";
 // dodać backgroud do wirgiliusza ....

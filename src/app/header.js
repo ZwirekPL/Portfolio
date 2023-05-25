@@ -32,7 +32,7 @@ const Header = () => {
           <div className="flex flex-col justify-center items-evenly w-full h-[100vh]">
             <div className="flex flex-col justify-center items-center w-full h-40">
               <motion.h1
-                className=" p-2 text-center font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-600 fixed top-[10rem] z-50"
+                className=" p-2 text-center font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-600 fixed top-[10rem] z-50 "
                 style={{
                   translateY: headerHeadingPositionMobile,
                   scale: headerHeadingScaleMobile,

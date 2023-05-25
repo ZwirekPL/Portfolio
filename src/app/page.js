@@ -29,9 +29,10 @@ export default function Home() {
       <>
         <Header />
         <MobileNavigation aboutRef={aboutRef} projectsRef={projectsRef} />
-        <main className="flex flex-col justify-start items-center w-full h-[400vh] relative overflow-hidden">
+        <main className="flex flex-col justify-start items-center w-full h-[100%] relative overflow-hidden">
           <About aboutRef={aboutRef} />
           <Different />
+          <Projects projectsRef={projectsRef} />
         </main>
       </>
     );
