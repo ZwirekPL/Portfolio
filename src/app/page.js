@@ -14,7 +14,8 @@ import MobileNavigation from "./mobileNavigation";
 import Navigation from "./navigation";
 import Different from "./different";
 import Projects from "./projects";
-// import Contact from "./cotnact";
+import Contact from "./contact";
+import Footer from "./footer";
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -27,33 +28,42 @@ export default function Home() {
   if (isMobile) {
     return (
       <>
-        <Header />
-        <MobileNavigation aboutRef={aboutRef} projectsRef={projectsRef} />
+        <Header contactRef={contactRef} />
+        <MobileNavigation
+          aboutRef={aboutRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+        />
         <main className="flex flex-col justify-start items-center w-full h-[100%] relative overflow-hidden">
           <About aboutRef={aboutRef} />
           <Different />
           <Projects projectsRef={projectsRef} />
+          <Contact contactRef={contactRef} />
         </main>
+        <Footer />
       </>
     );
   } else {
     return (
       <>
-        <Header />
-        <Navigation aboutRef={aboutRef} projectsRef={projectsRef} />
-        <main className="flex flex-col justify-start items-center w-full h-[420vh] relative overflow-hidden">
+        <Header contactRef={contactRef} />
+        <Navigation
+          aboutRef={aboutRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+        />
+        <main className="flex flex-col justify-start items-center w-full max-h-[420vh] relative overflow-hidden">
           <About aboutRef={aboutRef} />
           <Different />
           <Projects projectsRef={projectsRef} />
-          <TimeLine />
-          {/* <Contact /> */}
+          <Contact contactRef={contactRef} />
         </main>
-        <footer>
-          framer motion kiedy przewijam przycisk kontakt i Wirgiliusz Ładziński
-          ma pojsc do gory wolniej niż cała strona aby trafić na koniec w
-          miejsca na navbarze
-        </footer>
+        <Footer />
       </>
     );
   }
 }
+
+// to do
+// footer
+// open website modals with info

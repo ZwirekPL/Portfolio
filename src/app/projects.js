@@ -30,7 +30,7 @@ const Projects = ({ projectsRef }) => {
         ref={projectsRef}
         className="flex flex-col justify-center items-center w-full relative py-20  "
       >
-        <h1 className="text-4xl font-semibold text-center mb-8 bg-black/60">
+        <h1 className="text-4xl font-semibold text-center mt-20 mb-8 bg-black/60">
           Projects
         </h1>
         <div className="flex flex-col justify-center items-center w-[100%] gap-20">

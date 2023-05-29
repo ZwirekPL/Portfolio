@@ -28,7 +28,7 @@ const VideoHeader = () => {
           loop
           autoPlay
           muted
-          className="h-[90vh] absolute -z-20 right-[170px] "
+          className="h-[90vh] max-h-[560px] absolute -z-20 right-[150px] "
           style={{ translateX: video1 }}
         >
           <source src="/mix1.mp4" type="video/mp4" />
@@ -39,7 +39,7 @@ const VideoHeader = () => {
           loop
           autoPlay
           muted
-          className="h-[90vh] absolute -z-10 left-[170px] "
+          className="h-[90vh] max-h-[560px] absolute -z-10 left-[150px] "
           style={{ translateX: video2 }}
         >
           <source src="/mix2.mp4" type="video/mp4" />

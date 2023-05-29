@@ -3,7 +3,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import styles from "./style/styles.module.css";
 import VideoHeader from "./video-header";
 
-const Header = () => {
+const Header = ({ contactRef }) => {
   const isMobile = useMediaQuery("(max-width: 600px)");
 
   const { scrollY } = useScroll();
@@ -29,6 +29,9 @@ const Header = () => {
     [0, 0, 1]
   );
   const contactButtonMobile = useTransform(scrollY, [0, 350], [0, -200]);
+
+  const executeScroll = (ref) =>
+    ref.current.scrollIntoView({ behavior: "smooth" });
 
   if (isMobile) {
     return (
@@ -58,6 +61,7 @@ const Header = () => {
             >
               <button
                 className={` ${styles.navBtn} hover:bg-black/70 bg-black/20 rounded-md shadow-blue-600 shadow-md h-20 w-40 text-2xl font-bold text-blue-200 z-10 `}
+                onClick={() => executeScroll(contactRef)}
               >
                 Contact
               </button>
@@ -74,9 +78,9 @@ const Header = () => {
     );
   } else {
     return (
-      <header className="flex flex-col justify-center items-center w-full h-[100vh] relative">
-        <div className="flex flex-col justify-center items-center w-[940px] h-[100vh] relative">
-          <div className="flex flex-col justify-center items-evenly w-full h-[100vh]">
+      <header className="flex flex-col justify-center items-center w-full h-[100vh] max-h-[700px]  relative">
+        <div className="flex flex-col justify-center items-center w-[940px] max-h-[560px] relative">
+          <div className="flex flex-col justify-center items-evenly w-full ">
             <div className="flex flex-col justify-center items-center w-full h-40">
               <motion.h1
                 className=" p-2 font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-600 fixed top-[9rem] z-50"
@@ -100,6 +104,7 @@ const Header = () => {
             >
               <button
                 className={` ${styles.navBtn} hover:bg-black/70 bg-black/30 rounded-md h-20 w-40 text-2xl font-bold text-blue-200 z-10 border-indigo-400 border`}
+                onClick={() => executeScroll(contactRef)}
               >
                 Contact
               </button>

@@ -269,7 +269,6 @@
     transform: rotateY(0deg);
   }
 }
-
 .react {
   position: absolute;
   top: 50%;
@@ -388,13 +387,13 @@
 .navBtn:hover::first-letter {
   color: #2563eb;
   animation-name: flicker-letter;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 .navBtn:hover {
-  box-shadow: 8px 8px 20px 0px rgba(37, 99, 235, 1);
-  /* inset -5px -5px 6px 0px rgba(37, 99, 235, 1); */
+  box-shadow: 8px 8px 20px 0px rgba(37, 99, 235, 1),
+    inset -5px -5px 6px 0px rgba(37, 99, 235, 1);
   animation-name: flicker;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -589,3 +588,150 @@
   font-size: 1.5rem;
   line-height: 2rem;
 }
+/* CONTACT */
+.contactFormInput,
+.contactFormSpan,
+.contactFormLabel,
+.contactFormTextArea {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+}
+.contactFormInput:focus,
+.contactFormTextArea:focus {
+  outline: 0;
+}
+.contactFormInput,
+.contactFormTextArea {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background-color: black;
+  color: #fff;
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+}
+
+.contactFormInput + .contactFormLabel,
+.contactFormTextArea + .contactFormLabel {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 2% 0 0 0;
+  width: 10%;
+  border-top: 1px solid #388bff;
+  transition: width 0.4s ease;
+  height: 0;
+}
+.contactFormInput:focus + .contactFormLabel,
+.contactFormTextArea:focus + .contactFormLabel {
+  width: 80%;
+}
+.contactFormInput:focus,
+.contactFormInput:valid,
+/* .contactFormInput:invalid, */
+.contactFormTextArea:focus,
+.contactFormTextArea:valid {
+  padding-top: 35px;
+  margin-top: 35px;
+}
+.contactFormInput:focus + .contactFormLabel > .contactFormSpan,
+.contactFormTextArea:focus + .contactFormLabel > .contactFormSpan,
+.contactFormInput:valid + .contactFormLabel > .contactFormSpan,
+/* .contactFormInput:invalid + .contactFormLabel > .contactFormSpan, */
+.contactFormTextArea:valid + .contactFormLabel > .contactFormSpan {
+  top: -100px;
+  left: 0rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.contactFormTextArea:focus + .contactFormLabel > .contactFormSpan,
+.contactFormTextArea:valid + .contactFormLabel > .contactFormSpan {
+  top: -150px;
+}
+
+/* .contactFormInput:invalid + .contactFormLabel {
+  border-color: #cb0000;
+} */
+.contactFormInput:valid + .contactFormLabel,
+.contactFormTextArea:valid + .contactFormLabel {
+  border-color: #00cb00;
+}
+.contactFormInput + .contactFormLabel > .contactFormSpan,
+.contactFormTextArea + .contactFormLabel > .contactFormSpan {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8f8f8f;
+  font-size: 2rem;
+  top: -66px;
+  left: 30%;
+  z-index: 1;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+.navBtnSubmit {
+  width: 20%;
+  border: 1px solid #388bff;
+  background-color: #000000cd;
+  cursor: pointer;
+}
+.navBtnSubmit:hover {
+  background-color: #388bff;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactFormInput,
+  .contactFormSpan,
+  .contactFormLabel,
+  .contactFormTextArea {
+  }
+  .contactFormInput:focus,
+  .contactFormTextArea:focus {
+  }
+  .contactFormInput,
+  .contactFormTextArea {
+    font-size: 1.2rem;
+    margin-top: 25px;
+  }
+
+  .contactFormInput + .contactFormLabel,
+  .contactFormTextArea + .contactFormLabel {
+  }
+  .contactFormInput:focus + .contactFormLabel,
+  .contactFormTextArea:focus + .contactFormLabel {
+  }
+  .contactFormInput:focus,
+  .contactFormInput:valid,
+  .contactFormTextArea:focus,
+  .contactFormTextArea:valid {
+    padding-top: 15px;
+  }
+  .contactFormInput:focus + .contactFormLabel > .contactFormSpan,
+  .contactFormTextArea:focus + .contactFormLabel > .contactFormSpan,
+  .contactFormInput:valid + .contactFormLabel > .contactFormSpan,
+  .contactFormTextArea:valid + .contactFormLabel > .contactFormSpan {
+    font-size: 0.8rem;
+    top: -80px;
+  }
+  .contactFormTextArea:focus + .contactFormLabel > .contactFormSpan,
+  .contactFormTextArea:valid + .contactFormLabel > .contactFormSpan {
+  }
+  .contactFormInput:valid + .contactFormLabel,
+  .contactFormTextArea:valid + .contactFormLabel {
+  }
+  .contactFormInput + .contactFormLabel > .contactFormSpan,
+  .contactFormTextArea + .contactFormLabel > .contactFormSpan {
+    font-size: 1.2rem;
+  }
+  .navBtnSubmit {
+    width: 80%;
+    border: 1px solid #388bff;
+    background-color: #000000cd;
+  }
+}
+/* CONTACT END */

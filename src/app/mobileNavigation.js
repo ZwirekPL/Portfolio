@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "./style/styles.module.css";
 // dodać backgroud do wirgiliusza ....
-const MobileNavigation = ({ aboutRef, projectsRef }) => {
+const MobileNavigation = ({ aboutRef, projectsRef, contactRef }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { scrollY } = useScroll();
@@ -13,9 +13,12 @@ const MobileNavigation = ({ aboutRef, projectsRef }) => {
   };
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsOpen(!isOpen);
   };
-  const executeScroll = (ref) =>
+  const executeScroll = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav className={isOpen ? styles.mobileNavOpen : styles.mobileNavClose}>
@@ -65,7 +68,12 @@ const MobileNavigation = ({ aboutRef, projectsRef }) => {
           >
             Projects
           </button>
-          <button className={styles.contactMobileBtn}>Contact</button>
+          <button
+            className={styles.contactMobileBtn}
+            onClick={() => executeScroll(contactRef)}
+          >
+            Contact
+          </button>
         </div>
       )}
     </nav>
