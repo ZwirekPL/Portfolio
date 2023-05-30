@@ -6,7 +6,7 @@ const About = ({ aboutRef }) => {
   const { scrollY } = useScroll();
 
   const aboutDescriptionX = useTransform(scrollY, [300, 550], [-600, 0]);
-  const aboutDescriptionY = useTransform(scrollY, [650, 800], [0, 180]);
+  const aboutDescriptionY = useTransform(scrollY, [550, 800], [0, 350]);
 
   const isMobile = useMediaQuery("(max-width: 600px)");
   const aboutDescriptionMobileX = useTransform(scrollY, [100, 650], [-600, 0]);

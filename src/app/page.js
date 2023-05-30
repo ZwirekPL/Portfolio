@@ -65,5 +65,4 @@ export default function Home() {
 }
 
 // to do
-// footer
 // open website modals with info
