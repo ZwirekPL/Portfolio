@@ -117,10 +117,10 @@
     transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translate(25%, 10.5px);
+    transform: translate(53%, 11.75px);
   }
   100% {
-    transform: translate(25%, 10.5px) rotate(45deg);
+    transform: translate(53%, 11.75px) rotate(45deg);
   }
 }
 @keyframes secondBarToXBtn {
@@ -128,10 +128,10 @@
     transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translateX(50%);
+    transform: translateX(55%);
   }
   100% {
-    transform: translateX(50%) rotate(45deg);
+    transform: translateX(55%) rotate(45deg);
   }
 }
 @keyframes thirdBarToXBtn {
@@ -139,10 +139,10 @@
     transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translate(25%, -10.75px);
+    transform: translate(47%, -11.75px);
   }
   100% {
-    transform: translate(25%, -10.75px) rotate(-45deg);
+    transform: translate(47%, -11.75px) rotate(-45deg);
   }
 }
 @keyframes fourthBarToXBtn {
@@ -150,10 +150,10 @@
     transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translate(-25%, 10.5px);
+    transform: translate(-53%, 11.75px);
   }
   100% {
-    transform: translate(-25%, 10.5px) rotate(-45deg);
+    transform: translate(-53%, 11.75px) rotate(-45deg);
   }
 }
 @keyframes fifthBarToXBtn {
@@ -161,10 +161,10 @@
     transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translateX(-50%);
+    transform: translateX(-55%);
   }
   100% {
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-55%) rotate(-45deg);
   }
 }
 @keyframes sixthBarToXBtn {
@@ -172,19 +172,19 @@
     transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translate(-25%, -10.75px);
+    transform: translate(-53%, -11.75px);
   }
   100% {
-    transform: translate(-25%, -10.75px) rotate(45deg);
+    transform: translate(-53%, -11.75px) rotate(45deg);
   }
 }
 
 @keyframes xBtnToFirstBar {
   0% {
-    transform: translate(25%, 10.5px) rotate(45deg);
+    transform: translate(53%, 11.75px) rotate(45deg);
   }
   50% {
-    transform: translate(25%, 10.5px) rotate(0deg);
+    transform: translate(53%, 11.75px) rotate(0deg);
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -192,10 +192,10 @@
 }
 @keyframes xBtnToSecondBar {
   0% {
-    transform: translateX(50%) rotate(45deg);
+    transform: translateX(55%) rotate(45deg);
   }
   50% {
-    transform: translateX(50%) rotate(0deg);
+    transform: translateX(55%) rotate(0deg);
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -203,10 +203,10 @@
 }
 @keyframes xBtnToThirdBar {
   0% {
-    transform: translate(25%, -10.75px) rotate(-45deg);
+    transform: translate(47%, -11.75px) rotate(-45deg);
   }
   50% {
-    transform: translate(25%, -10.75px) rotate(0deg);
+    transform: translate(47%, -11.75px) rotate(0deg);
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -214,10 +214,10 @@
 }
 @keyframes xBtnToFourthBar {
   0% {
-    transform: translate(-25%, 10.5px) rotate(-45deg);
+    transform: translate(-53%, 11.75px) rotate(-45deg);
   }
   50% {
-    transform: translate(-25%, 10.5px) rotate(0deg);
+    transform: translate(-53%, 11.75px) rotate(0deg);
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -225,10 +225,10 @@
 }
 @keyframes xBtnToFifthBar {
   0% {
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-55%) rotate(-45deg);
   }
   50% {
-    transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-55%) rotate(0deg);
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -236,10 +236,10 @@
 }
 @keyframes xBtnToSixthBar {
   0% {
-    transform: translate(-25%, -10.75px) rotate(45deg);
+    transform: translate(-53%, -11.75px) rotate(45deg);
   }
   50% {
-    transform: translate(-25%, -10.75px) rotate(0deg);
+    transform: translate(-53%, -11.75px) rotate(0deg);
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -463,7 +463,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translate(25%, 10.5px) rotate(45deg);
+  transform: translate(53%, 11.75px) rotate(45deg);
 }
 .secondBarXBtn {
   background-color: white;
@@ -473,7 +473,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translateX(50%) rotate(45deg);
+  transform: translateX(55%) rotate(45deg);
 }
 .thirdBarXBtn {
   background-color: white;
@@ -483,7 +483,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translate(25%, -10.75px) rotate(-45deg);
+  transform: translate(47%, -11.75px) rotate(-45deg);
 }
 .fourthBarXBtn {
   background-color: white;
@@ -493,7 +493,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translate(-25%, 10.5px) rotate(-45deg);
+  transform: translate(-53%, 11.75px) rotate(-45deg);
 }
 .fifthBarXBtn {
   background-color: white;
@@ -503,7 +503,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translateX(-50%) rotate(-45deg);
+  transform: translateX(-55%) rotate(-45deg);
 }
 .sixthBarXBtn {
   background-color: white;
@@ -513,7 +513,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translate(-25%, -10.75px) rotate(45deg);
+  transform: translate(-53%, -11.75px) rotate(45deg);
 }
 .mobileNavOpen {
   animation-name: openNavMobile;

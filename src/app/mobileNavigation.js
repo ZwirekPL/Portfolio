@@ -6,7 +6,6 @@ const MobileNavigation = ({ aboutRef, projectsRef, contactRef }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { scrollY } = useScroll();
-  const mobileMenuBackgroundOn = useTransform(scrollY, [0, 350], [0, 1]);
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
@@ -25,7 +24,7 @@ const MobileNavigation = ({ aboutRef, projectsRef, contactRef }) => {
       <div className="flex flex-row justify-end w-[100%]">
         <button
           onClick={handleOpen}
-          className="flex justify-center items-center w-[50px] h-[50px] mt-14 mr-8 "
+          className="flex justify-center items-center w-[35px] h-[35px] mt-10 mr-8 "
         >
           <div className="flex flex-col w-[50%] justify-around items-center h-full">
             <div

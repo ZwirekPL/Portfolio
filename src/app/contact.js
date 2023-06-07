@@ -90,25 +90,15 @@ const Contact = ({ contactRef }) => {
       message: "",
     });
   };
-  const isMobile = useMediaQuery("(max-width: 600px)");
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <>
       <form
         ref={contactRef}
         onSubmit={handleEmailSubmit}
-        className={
-          isMobile
-            ? "flex flex-col justify-center items-start w-[80%] relative mb-20"
-            : "flex flex-col justify-center items-start  w-[800px] relative"
-        }
+        className="flex flex-col justify-center items-start w-[80%] md:w-[730px] lg:w-[940px] xl:w-[940px] 2xl:w-[940px]  relative mb-20"
       >
-        <h1
-          className={
-            isMobile
-              ? "text-4xl font-semibold text-center  p-2"
-              : "text-4xl font-semibold text-center mt-20 p-2"
-          }
-        >
+        <h1 className="text-4xl font-semibold text-center p-2 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20 ">
           Contact
         </h1>
         <input

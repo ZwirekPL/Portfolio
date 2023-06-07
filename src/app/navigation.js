@@ -20,13 +20,13 @@ const Navigation = ({ aboutRef, projectsRef, contactRef }) => {
           style={{ translateX: navLeftSide }}
         >
           <button
-            className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
+            className={`text-lg font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
             onClick={() => executeScroll(aboutRef)}
           >
             About me
           </button>
           <button
-            className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
+            className={`text-lg font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
             onClick={handleScrollToTop}
           >
             Home
@@ -37,13 +37,13 @@ const Navigation = ({ aboutRef, projectsRef, contactRef }) => {
           style={{ translateX: navRightSide }}
         >
           <button
-            className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
+            className={`text-lg font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
             onClick={() => executeScroll(projectsRef)}
           >
             Projects
           </button>
           <button
-            className={`text-2xl font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
+            className={`text-lg font-semibold p-2 mx-3 rounded-md ${styles.navBtn}`}
             onClick={() => executeScroll(contactRef)}
           >
             Contact
