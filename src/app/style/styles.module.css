@@ -463,7 +463,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translate(53%, 11.75px) rotate(45deg);
+  transform: translate(55%, 11.75px) rotate(45deg);
 }
 .secondBarXBtn {
   background-color: white;
@@ -473,7 +473,7 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  transform: translateX(55%) rotate(45deg);
+  transform: translateX(53%) rotate(45deg);
 }
 .thirdBarXBtn {
   background-color: white;

@@ -1,17 +1,15 @@
 "use client";
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import useMediaQuery from "./hooks/useMediaQuery";
-
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import useMediaQuery from "./hooks/useMediaQuery";
+
 config.autoAddCss = false;
 
-import TimeLine from "./timeline";
 import Header from "./header";
-import About from "./about";
 import MobileNavigation from "./mobileNavigation";
 import Navigation from "./navigation";
+import About from "./about";
 import Different from "./different";
 import Projects from "./projects";
 import Contact from "./contact";
@@ -51,10 +49,3 @@ export default function Home() {
     </>
   );
 }
-
-// to do
-// check responive
-// refactor code
-// tooo long description in catering manager
-// moj opis od zaminy do first product.
-//

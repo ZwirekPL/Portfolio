@@ -1,5 +1,3 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import useMediaQuery from "./hooks/useMediaQuery";
 import styles from "./style/styles.module.css";
 import React, { useState, useEffect } from "react";

@@ -1,11 +1,7 @@
-import { useState, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useState } from "react";
 import styles from "./style/styles.module.css";
-// dodać backgroud do wirgiliusza ....
 const MobileNavigation = ({ aboutRef, projectsRef, contactRef }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const { scrollY } = useScroll();
 
   const handleOpen = () => {
     setIsOpen(!isOpen);

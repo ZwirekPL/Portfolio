@@ -23,7 +23,7 @@ const Projects = ({ projectsRef }) => {
       site: "//catering-manager.vercel.app",
       title: "Catering Manager App",
       description:
-        "Catering Manager is an application for managing inventory and shopping lists. The application was created for a client who has 15 branches. Each branch has its own account that has access to its warehouse. The user can carry out an inventory by saving the inventory in the inventory history, which is stored for 30 days. Shopping lists are divided into groceries and chemicals.",
+        "Catering Manager is an application for managing inventory and shopping lists. Each branch has its own account that has access to its warehouse. The user can carry out an inventory by saving the inventory. In the inventory history, which is stored for 30 days.",
       technology: "React.js, MongoDB, Express.js, Node.js, Auth0,",
     },
   ];
