@@ -30,7 +30,7 @@ const Different = () => {
       <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-around md:justify-between lg:justify-between xl:justify-between 2xl:justify-between items-center w-full  gap-10">
         <div className="flex flex-col justify-center items-center w-[60%] md:w-[15%] lg:w-[15%] xl:w-[15%] 2xl:w-[15%] ">
           <FontAwesomeIcon icon={faStar} style={{ fontSize: "3rem" }} />
-          <p class className="text-center bg-black/60">
+          <p className="text-center bg-black/60">
             I don&apos;t know the word impossible
           </p>
         </div>

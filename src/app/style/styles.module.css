@@ -269,6 +269,9 @@
     transform: rotateY(0deg);
   }
 }
+.me {
+  aspect-ratio: auto;
+}
 .react {
   position: absolute;
   top: 50%;
@@ -276,6 +279,7 @@
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  aspect-ratio: 70/70;
 }
 .reactr {
   position: absolute;
@@ -285,6 +289,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 2s;
+  aspect-ratio: 70/70;
 }
 .html {
   position: absolute;
@@ -294,6 +299,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 4s;
+  aspect-ratio: 70/70;
 }
 .js {
   position: absolute;
@@ -303,6 +309,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 6s;
+  aspect-ratio: 70/70;
 }
 .bootstrap {
   position: absolute;
@@ -311,6 +318,7 @@
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  aspect-ratio: 70/70;
 }
 .css {
   position: absolute;
@@ -320,6 +328,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 2s;
+  aspect-ratio: 70/70;
 }
 .tailwind {
   position: absolute;
@@ -329,6 +338,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 4s;
+  aspect-ratio: 70/70;
 }
 .sass {
   position: absolute;
@@ -338,6 +348,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 6s;
+  aspect-ratio: 70/70;
 }
 .auth0 {
   position: absolute;
@@ -346,6 +357,7 @@
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  aspect-ratio: 70/70;
 }
 .express {
   position: absolute;
@@ -355,6 +367,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 1s;
+  aspect-ratio: 70/70;
 }
 .mongo {
   position: absolute;
@@ -364,6 +377,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 2s;
+  aspect-ratio: 70/70;
 }
 .nextjs {
   position: absolute;
@@ -373,6 +387,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 3s;
+  aspect-ratio: 70/70;
 }
 .node {
   position: absolute;
@@ -382,6 +397,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 4s;
+  aspect-ratio: 70/70;
 }
 
 .navBtn:hover::first-letter {
@@ -686,24 +702,9 @@
 
 @media only screen and (max-width: 600px) {
   .contactFormInput,
-  .contactFormSpan,
-  .contactFormLabel,
-  .contactFormTextArea {
-  }
-  .contactFormInput:focus,
-  .contactFormTextArea:focus {
-  }
-  .contactFormInput,
   .contactFormTextArea {
     font-size: 1.2rem;
     margin-top: 25px;
-  }
-
-  .contactFormInput + .contactFormLabel,
-  .contactFormTextArea + .contactFormLabel {
-  }
-  .contactFormInput:focus + .contactFormLabel,
-  .contactFormTextArea:focus + .contactFormLabel {
   }
   .contactFormInput:focus,
   .contactFormInput:valid,
@@ -717,12 +718,6 @@
   .contactFormTextArea:valid + .contactFormLabel > .contactFormSpan {
     font-size: 0.8rem;
     top: -80px;
-  }
-  .contactFormTextArea:focus + .contactFormLabel > .contactFormSpan,
-  .contactFormTextArea:valid + .contactFormLabel > .contactFormSpan {
-  }
-  .contactFormInput:valid + .contactFormLabel,
-  .contactFormTextArea:valid + .contactFormLabel {
   }
   .contactFormInput + .contactFormLabel > .contactFormSpan,
   .contactFormTextArea + .contactFormLabel > .contactFormSpan {
